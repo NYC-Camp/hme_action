@@ -3,3 +3,26 @@
  * @file
  * Contains Drupal\hme_action\hme_action.module
  */
+/**
+ * Implements hook_permission().
+ */
+function hme_action_permission()
+{
+    return array(
+        "delete_hme_action" => array(
+            "title" => t("Delete Hypermedia Engine Actions."),
+        ),
+        "add_hme_action" => array(
+            "title" => t("Add Hypermedia Engine Actions."),
+        ),
+        "view_hme_action" => array(
+            "title" => t("View Hypermedia Engine Actions."),
+        ),
+        "edit_hme_action" => array(
+            "title" => t("Edit Hypermedia Engine Actions."),
+        ),
+        "admin_hme_action" => array(
+            "title" => t("Administer Hypermedia Engine Action settings."),
+        ),
+    );
+}

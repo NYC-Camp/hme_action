@@ -1,0 +1,42 @@
+hme_action.view:
+  path: '/hypermedia/action/{hme_action}'
+  defaults:
+    _entity_view: 'hme_action'
+    _title: 'Hypermedia Engine Action'
+  requirements:
+    _permission: 'view_hme_action'
+hme_action.list:
+  path: '/hypermedia/action/list'
+  defaults:
+    _entity_list: 'hme_action'
+    _title: 'Hypermedia Engine Action List'
+  requirements:
+    _permission: 'view_hme_action'
+hme_action.add:
+  path: '/hypermedia/action/add'
+  defaults:
+    _entity_form: hme_action.add
+    _title: 'Add Hypermedia Engine Action'
+  requirements:
+    _permission: 'add_hme_action'
+hme_action.edit:
+  path: '/hypermedia/action/{hme_action}/edit'
+  defaults:
+    _entity_form: hme_action.edit
+    _title: 'Edit Hypermedia Engine Action'
+  requirements:
+    _permission: 'edit_hme_action'
+hme_action.delete:
+  path: '/hypermedia/action/{hme_action}/delete'
+  defaults:
+    _entity_form: hme_action.delete
+    _title: 'Delete Hypermedia Engine Action'
+    requirements:
+      _permission: 'delete_hme_action'
+hme_action.settings:
+  path: '/admin/structure/hypermedia_action_settings'
+  defaults:
+    _form: '\Drupal\hme_action\Entity\Form\ActionSettingsForm'
+    _title: 'Hypermedia Engine Action Settings'
+  requirements:
+    _permission: 'admin_hme_action'

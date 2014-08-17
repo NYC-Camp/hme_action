@@ -1,0 +1,5 @@
+hme_action.add:
+  route_name: hme_action.add
+  title: 'Add Hypermedia Engine Action'
+  appears_on:
+    - hme_action.list

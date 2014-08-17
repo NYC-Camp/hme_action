@@ -1,0 +1,17 @@
+hme_action.settings_tab:
+  route_name: hme_action.settings
+  title: 'Settings'
+  base_route: hme_action.settings
+hme_action.view:
+  route_name: hme_action.view
+  base_route: hme_action.view
+  title: 'View'
+hme_action.page_edit:
+  route_name: hme_action.edit
+  base_route: hme_action.view
+  title: 'Edit'
+hme_action.delete_confirm:
+  route_name: hme_action.delete
+  base_route: hme_action.view
+  title: 'Delete'
+  weight: 10
