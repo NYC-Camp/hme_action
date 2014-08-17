@@ -1,0 +1,7 @@
+name: Hypermedia Engine Action
+type: module
+description: 'Provides a Hypermedia Engine Action entity.'
+package: NYC Camp Hypermedia Engine
+core: 8.x
+dependencies:
+  - entity
